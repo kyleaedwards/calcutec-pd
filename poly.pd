@@ -1,0 +1,12 @@
+#N canvas 811 212 450 300 12;
+#X obj 161 49 drummach;
+#X obj 30 45 psix3;
+#X obj 32 205 dac~;
+#X obj 61 95 *~ 3;
+#X obj 22 131 *~ 3;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 4 0;
+#X connect 1 1 3 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;
