@@ -1,0 +1,16 @@
+#N canvas 524 456 674 484 12;
+#X obj 22 24 inlet~;
+#X obj 32 52 hip~ 1000;
+#X obj 32 78 delwrite~ \$0-haas 100;
+#X obj 22 106 lop~ 1000;
+#X obj 22 186 outlet~;
+#X obj 86 186 outlet~;
+#X obj 86 161 delread~ \$0-haas 50;
+#X obj 37 134 delread~ \$0-haas 15;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 3 0 5 0;
+#X connect 6 0 5 0;
+#X connect 7 0 4 0;

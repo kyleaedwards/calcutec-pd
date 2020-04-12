@@ -1,4 +1,4 @@
-#N canvas 1008 314 872 821 12;
+#N canvas 808 207 872 821 12;
 #X obj 32 147 soundfiler;
 #X obj 156 22 table \$0-buf;
 #X obj 32 84 pack s \$0;
