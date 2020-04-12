@@ -1,4 +1,4 @@
-#N canvas 356 436 1180 569 12;
+#N canvas 356 242 1180 763 12;
 #X obj 36 36 notein 1, f 10;
 #X obj 36 61 poly 4, f 10;
 #X obj 36 85 - 1;
@@ -52,7 +52,7 @@
 -1 -1;
 #X obj 1044 95 sel 119;
 #X obj 1044 187 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X msg 941 135 0;
 #X obj 1022 24 notein 5;
 #X obj 994 150 == 119;
@@ -83,6 +83,9 @@
 #X obj 198 616 table $swt2;
 #X msg 199 563 \; $swt2 sinesum 2051 1 0.5633 0.245 0.205 0.05 0.0625
 ;
+#X obj 123 102 adc~;
+#X msg 409 85 \; pd dsp 1;
+#X obj 409 57 loadbang;
 #X connect 0 0 1 0;
 #X connect 0 1 1 1;
 #X connect 1 0 2 0;
@@ -164,3 +167,6 @@
 #X connect 68 1 70 0;
 #X connect 68 1 73 0;
 #X connect 69 0 67 0;
+#X connect 74 0 4 0;
+#X connect 74 1 4 1;
+#X connect 76 0 75 0;
